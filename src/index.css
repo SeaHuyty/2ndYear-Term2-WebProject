@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .navBar {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10rem;
+    padding: 20px;
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+  footer {
+    z-index: 200;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10rem;
+    padding: 20px;
+    top: 88%;
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  h1 {
+    position: relative;
+    color: white;
+    /* text-shadow: 1px 1px 4px #000; */
+    font-size: 200px;
+    z-index: 10;
+    margin-top: -300px;
+    
+  }
+
+  .one {
+    background-image: url(Car-project1.jpg);
+    filter: brightness(110%);
+    background-size: cover;
+    img {
+      position: absolute;
+        width: 38%;
+    }
+}
+
+.two {
+    background-color: rgb(74, 175, 74);
+}
+
+.three {
+    background-color: rgb(218, 88, 88);
+}
+
+.four {
+    background-color: rgb(234, 234, 115);
+}
+.five {
+    background-color: rgb(0, 125, 54);
+}
