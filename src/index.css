@@ -7,6 +7,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    cursor: none;
 }
 
 body {
@@ -25,22 +26,32 @@ section {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
-  }
+}
 
   .navBar {
-    z-index: 100;
+    z-index: 1;
     position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    gap: 10rem;
-    padding: 20px;
-    a {
+    padding: 30px;
+    .name {
       color: white;
-      text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+    }
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10rem;
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
     }
   }
   footer {
@@ -51,42 +62,164 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 10rem;
+    gap: 5rem;
     padding: 20px;
     top: 88%;
     a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      img {
+        width: 35%;
+      }
     }
   }
 
   h1 {
     position: relative;
     color: white;
-    /* text-shadow: 1px 1px 4px #000; */
+    
     font-size: 200px;
     z-index: 10;
-    margin-top: -300px;
+    margin-top: 100px;
     
   }
 
   .one {
     background-image: url(Car-project1.jpg);
-    filter: brightness(110%);
+    filter: brightness(100%);
     background-size: cover;
+    .myName {
+      margin-right: 20%;
+      margin-bottom: 17%;
+      z-index: 10;
+      color: white;
+      p {
+        font-weight: 400;
+        font-size: 140%;
+        line-height: 3rem;
+        letter-spacing: -1px;
+        span {
+          font-weight: bold;
+          font-size: 280%;
+        }
+      }
+    }
+    .intro {
+      z-index: 11;
+      color: white;
+      font-weight: 400;
+      width: 20%;
+      margin-left: 3%;
+      margin-top: 17%;
+    }
     img {
       position: absolute;
-        width: 38%;
+      width: 38%;
+      transform: translateX(0px);
+      animation: floating 3s ease-in-out infinite;
     }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floating1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .two {
     background-color: rgb(74, 175, 74);
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    p {
+      z-index: 10;
+      top: 30%;
+      color: white;
+      font-size: 240%;
+      font-weight: bold;
+    }
+    .item {
+      height: 100%;
+      min-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      scroll-snap-align: start;
+      background-image: url(Car-project1.jpg);
+      filter: brightness(100%);
+      background-size: cover;
+    }
+
+    #item1 {
+      /* background-color: rgb(218, 88, 88); */
+    }
+    #item3 {
+      img {
+        position: absolute;
+        transform: translateX(0px);
+        animation: floating1 4s ease-in-out infinite;
+      }
+      .cloud1 {
+        width: 10%;
+        top: 15%;
+        left: 7%;
+      }
+      .cloud4 {
+        width: 10%;
+        top: 15%;
+        left: 80%;
+      }
+      .cloud2 {
+        width: 20%;
+        left: 77%;
+      }
+      .cloud3 {
+        width: 27%;
+        left: 5%;
+        top: 60%;
+      }
+      .ufo {
+        width: 29%;
+        top: 13%;
+      }
+      .floatingAstro {
+        width: 11%;
+        top: 40%;
+      }
+    }
 }
 
 .three {
     background-color: rgb(218, 88, 88);
+    position: relative;
+    img {
+      position: absolute;
+      transform: translateX(0px);
+      animation: floating1 4s ease-in-out infinite;
+    }
+    .man {
+      width: 100%;
+      top: 69.5vh;
+    }
 }
 
 .four {
@@ -94,4 +227,15 @@ section {
 }
 .five {
     background-color: rgb(0, 125, 54);
+}
+
+.cursor {
+  background-color: white;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
