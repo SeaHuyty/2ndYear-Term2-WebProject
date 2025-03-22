@@ -168,6 +168,12 @@ section {
       filter: brightness(100%);
       background-size: cover;
     }
+    p:nth-child(1) {
+      position: absolute;
+      top: 10%;
+      z-index: -1;
+      font-size: 11rem;
+    }
 
     #item3 {
       img {
@@ -195,11 +201,11 @@ section {
         top: 60%;
       }
       .ufo {
-        width: 29%;
+        width: 23%;
         top: 13%;
       }
       .floatingAstro {
-        width: 11%;
+        width: 9%;
         top: 40%;
       }
     }

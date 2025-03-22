@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import resume from '/Mr.pdf';
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -49,18 +50,19 @@ function App() {
             <motion.div className="name" whileHover={{ scale: 1.4 }} whileTap={{ scale: 0.9 }} transition={{ type: 'spring', stiffness: 300 }} >YOUR NAME</motion.div>
             <div className="navigation"> 
               <a href="#">HOME</a>
-              <a href="#">HOME</a>
-              <a href="#">HOME</a>
-              <a href="#">HOME</a>
+              <a href="#">EDUCATION</a>
+              <a href="#">EXPERIENCE</a>
+              <a href="#">CONTACT</a>
             </div>
           </nav>
 
           <footer>
             {/* Implement a component here that loop to retrieve data */}
-            <a href="#"><motion.img src="linkedIn.png" alt="LinkedIn" whileHover={{ scale: 1.4 }} whileTap={{ scale: 0.9 }} transition={{ type: 'spring', stiffness: 300 }} /></a>
-            <a href="#"><img src="github.png" alt="Github" /></a>
-            <a href="#"><img src="telegram.png" alt="Telegram" /></a>
-            <a href="#"><img src="gmail.png" alt="email" /></a>
+              <a href="#"><motion.img src="linkedIn.png" alt="LinkedIn" whileHover={{ scale: 1.4 }} whileTap={{ scale: 0.9 }} transition={{ type: 'spring', stiffness: 300 }} /></a>
+              <a href="#"><img src="github.png" alt="Github" /></a>
+              <a href="#"><img src="telegram.png" alt="Telegram" /></a>
+              <a href="#"><img src="gmail.png" alt="Gmail" /></a>
+              <a href={resume} download='resume' ><img src="download.png" alt="Download_CV" /></a>
           </footer>
 
           <section className="one">
