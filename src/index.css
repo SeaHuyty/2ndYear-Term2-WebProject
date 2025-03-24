@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
+  font-size: 16px; /* Base font size */
   scroll-behavior: smooth;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    cursor: none;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: none;
 }
 
 body {
@@ -15,109 +18,120 @@ body {
 }
 
 section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
 }
 
 .container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
-  .navBar {
-    z-index: 1;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding: 30px;
-    .name {
-      color: white;
-      font-weight: 600;
-    }
-    .navigation {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 10rem;
-      a {
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-      }
-    }
-  }
-  footer {
-    z-index: 200;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 5rem;
-    padding: 20px;
-    top: 88%;
-    a {
-      color: white;
-      text-decoration: none;
-      img {
-        width: 35%;
-      }
-    }
-  }
+.navBar {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
 
-  h1 {
-    position: relative;
-    color: white;
-    
-    font-size: 200px;
-    z-index: 10;
-    margin-top: 100px;
-    
-  }
+.navBar .name {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem; /* Adjust as needed */
+}
 
-  .one {
-    background-image: url(Car-project1.jpg);
-    filter: brightness(100%);
-    background-size: cover;
-    .myName {
-      margin-right: 20%;
-      margin-bottom: 17%;
-      z-index: 10;
-      color: white;
-      p {
-        font-weight: 400;
-        font-size: 140%;
-        line-height: 3rem;
-        letter-spacing: -1px;
-        span {
-          font-weight: bold;
-          font-size: 280%;
-        }
-      }
-    }
-    .intro {
-      z-index: 11;
-      color: white;
-      font-weight: 400;
-      width: 20%;
-      margin-left: 3%;
-      margin-top: 17%;
-    }
-    img {
-      position: absolute;
-      width: 38%;
-      transform: translateX(0px);
-      animation: floating 3s ease-in-out infinite;
-    }
+.navBar .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.navBar .navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem; /* Adjust as needed */
+}
+
+footer {
+  z-index: 200;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5rem;
+  padding: 20px;
+  top: 88%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer img {
+  width: 35%;
+}
+
+h1 {
+  position: relative;
+  color: white;
+  font-size: 200px;
+  z-index: 10;
+  margin-top: 100px;
+}
+
+.one {
+  background-image: url(Car-project1.jpg);
+  filter: brightness(100%);
+  background-size: cover;
+}
+
+.one .myName {
+  margin-right: 20%;
+  margin-bottom: 17%;
+  z-index: 10;
+  color: white;
+}
+
+.one .myName p {
+  font-weight: 400;
+  font-size: 1.4rem; /* Adjust as needed */
+  line-height: 3rem;
+  letter-spacing: -1px;
+}
+
+.one .myName span {
+  font-weight: bold;
+  font-size: 2.8rem; /* Adjust as needed */
+}
+
+.one .intro {
+  z-index: 11;
+  color: white;
+  font-weight: 400;
+  width: 20%;
+  margin-left: 3%;
+  margin-top: 17%;
+}
+
+.one img {
+  position: absolute;
+  width: 38%;
+  transform: translateX(0px);
+  animation: floating 3s ease-in-out infinite;
 }
 
 @keyframes floating {
@@ -126,18 +140,6 @@ section {
   }
   50% {
     transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes floating1 {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
   }
   100% {
     transform: translateY(0px);
