@@ -11,18 +11,13 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           download={link.download || undefined}
-        >
-          {link.motion ? (
-            <motion.img
-              src={link.icon}
-              alt={link.name}
-              whileHover={{ scale: 1.4 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: 'spring', stiffness: 300 }}
-            />
-          ) : (
-            <img src={link.icon} alt={link.name} />
-          )}
+        > <motion.img
+            src={link.icon}
+            alt={link.name}
+            whileHover={{ scale: 1.4 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+          />
         </a>
       ))}
     </footer>

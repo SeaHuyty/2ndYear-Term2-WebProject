@@ -177,7 +177,7 @@ h1 {
       font-size: 11rem;
     }
 
-    #item3 {
+    .item {
       img {
         position: absolute;
         transform: translateX(0px);
