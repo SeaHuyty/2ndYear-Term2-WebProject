@@ -42,7 +42,7 @@ export const navLinks = [
   
   export const experienceItems = [
     {
-      id: "item3", // Matches your CSS selectors (#item3)
+      id: "item3", 
       title: "Experience",
       role: "Software Engineer",
       company: "Microsoft",

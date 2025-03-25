@@ -8,8 +8,6 @@ export default function Experience({ textEnter, textLeave }) {
           <p onMouseEnter={textEnter} onMouseLeave={textLeave}>{item.title}</p>
           <p>{item.role}</p>
           <p>{item.company}</p>
-          
-          {/* Render animated images only if they exist */}
           {item.images?.map((img) => (
             <img
               key={img.className}
