@@ -244,3 +244,53 @@ h1 {
   left: 0;
   pointer-events: none;
 }
+.two #item3 img {
+  position: absolute;
+  transform: translateX(0px);
+  animation: floating1 4s ease-in-out infinite;
+}
+
+.two #item3 .cloud1 {
+  width: 10%;
+  top: 15%;
+  left: 7%;
+}
+
+.two #item3 .cloud4 {
+  width: 10%;
+  top: 15%;
+  left: 80%;
+}
+
+.two #item3 .cloud2 {
+  width: 20%;
+  left: 77%;
+}
+
+.two #item3 .cloud3 {
+  width: 27%;
+  left: 5%;
+  top: 60%;
+}
+
+.two #item3 .ufo {
+  width: 23%;
+  top: 13%;
+}
+
+.two #item3 .floatingAstro {
+  width: 9%;
+  top: 40%;
+}
+
+@keyframes floating1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
