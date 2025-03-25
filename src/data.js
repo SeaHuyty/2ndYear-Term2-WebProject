@@ -11,7 +11,6 @@ export const navLinks = [
       name: "LinkedIn",
       url: "https://www.linkedin.com",
       icon: "linkedIn.png",
-      motion: true 
     },
     {
       id: "github",
@@ -43,6 +42,34 @@ export const navLinks = [
   export const experienceItems = [
     {
       id: "item3", 
+      title: "Experience",
+      role: "Software Engineer",
+      company: "Microsoft",
+      images: [
+        { className: "cloud1", src: "R.png", alt: "Cloud" },
+        { className: "cloud4", src: "R.png", alt: "Cloud" },
+        { className: "cloud2", src: "R.png", alt: "Cloud" },
+        { className: "cloud3", src: "R.png", alt: "Cloud" },
+        { className: "ufo", src: "ufo.png", alt: "UFO" },
+        { className: "floatingAstro", src: "floatingAstro.png", alt: "Astronaut" }
+      ]
+    },
+    {
+      id: "item2", 
+      title: "Experience",
+      role: " Engineer",
+      company: "Microsoft",
+      images: [
+        { className: "cloud1", src: "R.png", alt: "Cloud" },
+        { className: "cloud4", src: "R.png", alt: "Cloud" },
+        { className: "cloud2", src: "R.png", alt: "Cloud" },
+        { className: "cloud3", src: "R.png", alt: "Cloud" },
+        { className: "ufo", src: "ufo.png", alt: "UFO" },
+        { className: "floatingAstro", src: "floatingAstro.png", alt: "Astronaut" }
+      ]
+    },
+    {
+      id: "item2", 
       title: "Experience",
       role: "Software Engineer",
       company: "Microsoft",
