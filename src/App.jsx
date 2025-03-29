@@ -55,7 +55,10 @@ function App() {
         <Footer />
         <Home textEnter={textEnter} textLeave={textLeave} />
         <Education textEnter={textEnter} textLeave={textLeave} />
-        <Experience textEnter={textEnter} textLeave={textLeave} />
+        {/* <Experience textEnter={textEnter} textLeave={textLeave} /> */}
+        <section id="experience" className="two">
+          <p>Experience</p>
+        </section>
         <Contact textEnter={textEnter} textLeave={textLeave} />
       </div>
       <motion.div className="cursor" variants={variants} animate={cursorVariant} />
