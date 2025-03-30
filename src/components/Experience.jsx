@@ -3,21 +3,32 @@ import { experienceItems } from '../data';
 export default function Experience({ textEnter, textLeave }) {
   return (
     <section id="experience" className="two">
-      {experienceItems.map((item) => (
-        <div key={item.id} className="item" id={item.id}>
-          <p onMouseEnter={textEnter} onMouseLeave={textLeave}>{item.title}</p>
-          <p>{item.role}</p>
-          <p>{item.company}</p>
-          {item.images?.map((img) => (
-            <img
-              key={img.className}
-              className={img.className}
-              src={img.src}
-              alt={img.alt}
-            />
-          ))}
+      <div className='header'>
+        <p onMouseEnter={textEnter} onMouseLeave={textLeave} >Experience</p>
+      </div>
+      <div className='item'>
+        <img src="R.png" alt="cloud" className='cloud1' />
+        <img src="R.png" alt="cloud" className='cloud2' />
+        <img src="R.png" alt="cloud" className='cloud3' />
+        <img src="R.png" alt="cloud" className='cloud4' />
+        <img src="ufo.png" alt="ufo" className='ufo' />
+        <img src="floatingAstro.png" alt="floating Astro" className='floatingAstro' />
+        <div className="container first-container">
+          <h2>Amazon</h2>
+          <small>May 2014 - May 2015</small>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iste non natus quas impedit error similique sint aliquid perferendis distinctio?</p>
         </div>
-      ))}
+        <div className="container second-container">
+          <h2>Amazon</h2>
+          <small>May 2014 - May 2015</small>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iste non natus quas impedit error similique sint aliquid perferendis distinctio?</p>
+        </div>
+        <div className="container third-container">
+          <h2>Amazon</h2>
+          <small>May 2014 - May 2015</small>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iste non natus quas impedit error similique sint aliquid perferendis distinctio?</p>
+        </div>
+      </div>
     </section>
   );
 }
