@@ -1,6 +1,16 @@
+import { motion } from 'framer-motion';
+
 export default function Home({ textEnter, textLeave }) {
     return (
-      <section id="home" className="one">
+      <motion.section id="home" className="one"
+      initial = {{ opacity: 0 }}
+            whileInView = {{ 
+            opacity: 1, 
+            transition: {
+                duration: 1
+            }
+            }}
+      >
         <div className="myName">
           <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
             Hi there
@@ -18,6 +28,6 @@ export default function Home({ textEnter, textLeave }) {
             creative solutions.
           </p>
         </div>
-      </section>
+      </motion.section>
     );
   }

@@ -1,6 +1,16 @@
+import { motion } from 'framer-motion';
+
 export default function Education({ textEnter, textLeave }) {
   return (
-    <section id="education" className="three">
+    <motion.section id="education" className="three"
+      initial = {{ opacity: 0 }}
+      whileInView = {{ 
+        opacity: 1, 
+        transition: {
+          duration: 1
+        }
+       }}
+    >
       <div className='header'>
         <p onMouseEnter={textEnter} onMouseLeave={textLeave} >Education</p>
       </div>
@@ -17,6 +27,6 @@ export default function Education({ textEnter, textLeave }) {
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius molestiae deserunt qui vitae nisi nobis natus ex. Laborum, maiores? Nemo placeat beatae qui dignissimos rerum ut sapiente sunt dolore maxime!</p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

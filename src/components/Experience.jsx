@@ -1,8 +1,17 @@
 import { experienceItems } from '../data';
+import { motion } from 'framer-motion';
 
 export default function Experience({ textEnter, textLeave }) {
   return (
-    <section id="experience" className="two">
+    <motion.section id="experience" className="two"
+      initial = {{ opacity: 0 }}
+        whileInView = {{ 
+          opacity: 1, 
+          transition: {
+            duration: 1
+          }
+        }}
+      >
       <div className='header'>
         <p onMouseEnter={textEnter} onMouseLeave={textLeave} >Experience</p>
       </div>
@@ -29,6 +38,6 @@ export default function Experience({ textEnter, textLeave }) {
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iste non natus quas impedit error similique sint aliquid perferendis distinctio?</p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
