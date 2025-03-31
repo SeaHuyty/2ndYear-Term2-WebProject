@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Project from './components/Project';
 
 function App() {
   const [mousePosition, setMousePosition] = useState({
@@ -56,6 +57,7 @@ function App() {
         <Home textEnter={textEnter} textLeave={textLeave} />
         <Education textEnter={textEnter} textLeave={textLeave} />
         <Experience textEnter={textEnter} textLeave={textLeave} />
+        <Project textEnter={textEnter} textLeave={textLeave} />
         <Contact textEnter={textEnter} textLeave={textLeave} />
       </div>
       <motion.div className="cursor" variants={variants} animate={cursorVariant} />

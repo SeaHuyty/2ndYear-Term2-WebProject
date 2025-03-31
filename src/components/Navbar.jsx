@@ -15,8 +15,8 @@ export default function Navbar() {
         <a href="#home">HOME</a>
         <a href="#education">EDUCATION</a>
         <a href="#experience">EXPERIENCE</a>
-        <a href="#contact">CONTACT</a>
       </div>
+      <a href="#contact">CONTACT</a>
     </nav>
   );
 }
