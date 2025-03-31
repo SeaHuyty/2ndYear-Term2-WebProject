@@ -27,7 +27,7 @@ export default function Project({ textEnter, textLeave }) {
                 <div className="project-box block">
                     <img src='database0202.png' alt="Second Year Term One Database Project" />
                     <div className="detail">
-                        <h2>PaPaN - Porsche-Exclusive Car Dealership Website</h2>
+                        <h2>Photo Phnom Penh Tuk Tuk Tour Ticket System</h2>
                         <p>A website for a specialized car dealership that exclusively sells Porsche vehicles. The design concept is inspired by Porsche’s philosophy—precision, innovation, and timeless elegance.
                             With a focus on luxury and functionality, the platform allows users to explore available models effortlessly while staying true to Porsche’s legacy of excellence.</p>
                     </div>

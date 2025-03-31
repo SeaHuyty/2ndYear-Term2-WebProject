@@ -1,4 +1,3 @@
-import { experienceItems } from '../data';
 import { motion } from 'framer-motion';
 
 export default function Experience({ textEnter, textLeave }) {
