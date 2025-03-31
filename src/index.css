@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url(Car-project1.jpg);
+  background-image: url('/Car-project1.jpg');
   overflow: hidden;
   background-size: cover;
 }
