@@ -1,7 +1,9 @@
 export default function Contact({ textEnter, textLeave }) {
   return (
     <section id="contact" className="four">
-      <h1 onMouseEnter={textEnter} onMouseLeave={textLeave}>Contact Me</h1>
+      <div className='header'>
+        <p onMouseEnter={textEnter} onMouseLeave={textLeave} >Contact</p>
+      </div>
     </section>
   );
 }

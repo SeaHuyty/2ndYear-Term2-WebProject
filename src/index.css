@@ -1,32 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-  font-size: 16px; /* Base font size */
-  scroll-behavior: smooth;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   cursor: none;
+  color: white;
 }
 
 body {
+  background-image: url(Car-project1.jpg);
   overflow: hidden;
-}
-
-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
+  background-size: cover;
 }
 
 .container {
-  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
   overflow-y: scroll;
   height: 100vh;
 }
@@ -43,7 +33,6 @@ section {
 }
 
 .navBar .name {
-  color: white;
   font-weight: 600;
   font-size: 1.5rem; /* Adjust as needed */
 }
@@ -57,7 +46,6 @@ section {
 }
 
 .navBar .navigation a {
-  color: white;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem; /* Adjust as needed */
@@ -77,7 +65,6 @@ footer {
 }
 
 footer a {
-  color: white;
   text-decoration: none;
 }
 
@@ -85,25 +72,19 @@ footer img {
   width: 35%;
 }
 
-h1 {
-  position: relative;
-  color: white;
-  font-size: 200px;
-  z-index: 10;
-  margin-top: 100px;
-}
-
 .one {
-  background-image: url(Car-project1.jpg);
   filter: brightness(100%);
   background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .one .myName {
   margin-right: 20%;
   margin-bottom: 17%;
   z-index: 10;
-  color: white;
 }
 
 .one .myName p {
@@ -120,7 +101,6 @@ h1 {
 
 .one .intro {
   z-index: 11;
-  color: white;
   font-weight: 400;
   width: 20%;
   margin-left: 3%;
@@ -147,37 +127,28 @@ h1 {
 }
 
 .two {
-    background-color: rgb(74, 175, 74);
     display: flex;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    p {
-      z-index: 10;
-      top: 30%;
-      color: white;
-      font-size: 240%;
-      font-weight: bold;
-    }
-    .item {
-      height: 100%;
-      min-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4%;
+    .header {
       display: flex;
       justify-content: center;
       align-items: center;
-      scroll-snap-align: start;
-      background-image: url(Car-project1.jpg);
-      filter: brightness(100%);
-      background-size: cover;
-    }
-    p:nth-child(1) {
-      position: absolute;
-      top: 10%;
-      z-index: -1;
-      font-size: 11rem;
+      p {
+        font-weight: bold;
+        font-size: 3rem;
+        width: fit-content;
+      }
     }
 
     .item {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
         position: absolute;
         transform: translateX(0px);
@@ -196,42 +167,104 @@ h1 {
       .cloud2 {
         width: 20%;
         left: 77%;
+        top: 70%;
       }
       .cloud3 {
         width: 27%;
         left: 5%;
-        top: 60%;
+        top: 50%;
       }
       .ufo {
-        width: 23%;
+        width: 33%;
         top: 13%;
       }
       .floatingAstro {
-        width: 9%;
+        width: 10%;
+        top: 50%;
+      }
+      .container {
+        border: 2px solid white;
+        padding: 4%;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: 35%;
+        padding: 2%;
+        position: absolute;
+        z-index: -1;
+      }
+      .first-container {
+        top: 20%;
+        left: 10%;
+      }
+      .second-container {
         top: 40%;
+        left: 60%;
+      }
+      .third-container {
+        top: 70%;
+        left: 10%;
       }
     }
 }
 
+@keyframes floating1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .three {
-    background-color: rgb(218, 88, 88);
-    position: relative;
-    img {
-      position: absolute;
-      transform: translateX(0px);
-      animation: floating1 4s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4%;
+  margin-top: 3%;
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+    p {
+      font-weight: bold;
+      font-size: 3rem;
+      width: fit-content;
     }
-    .man {
-      width: 100%;
-      top: 69.5vh;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3%;
+    padding-top: 0%;
+    gap: 10%;
+    #box {
+      border: 2px solid white;
+      padding: 4%;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
     }
+  }
 }
 
 .four {
-    background-color: rgb(234, 234, 115);
-}
-.five {
-    background-color: rgb(0, 125, 54);
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-weight: bold;
+      font-size: 3rem;
+      width: fit-content;
+    }
+  }
 }
 
 .cursor {
@@ -243,54 +276,4 @@ h1 {
   top: 0;
   left: 0;
   pointer-events: none;
-}
-.two #item3 img {
-  position: absolute;
-  transform: translateX(0px);
-  animation: floating1 4s ease-in-out infinite;
-}
-
-.two #item3 .cloud1 {
-  width: 10%;
-  top: 15%;
-  left: 7%;
-}
-
-.two #item3 .cloud4 {
-  width: 10%;
-  top: 15%;
-  left: 80%;
-}
-
-.two #item3 .cloud2 {
-  width: 20%;
-  left: 77%;
-}
-
-.two #item3 .cloud3 {
-  width: 27%;
-  left: 5%;
-  top: 60%;
-}
-
-.two #item3 .ufo {
-  width: 23%;
-  top: 13%;
-}
-
-.two #item3 .floatingAstro {
-  width: 9%;
-  top: 40%;
-}
-
-@keyframes floating1 {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
 }
