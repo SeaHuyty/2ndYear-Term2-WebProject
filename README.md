@@ -1,15 +1,37 @@
-# React + Vite
+# Portfolio Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern and responsive portfolio template built using **React.js** and **Framer Motion** for smooth animations. It provides an elegant and interactive user experience, making it perfect for showcasing your projects, skills, and personal brand.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 **Framer Motion Animations** – Beautiful animations for enhanced user engagement
+- 🔥 **Modern UI/UX** – Clean and minimal design
+- ⚛️ **Built with React.js** – Component-based architecture for scalability
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/SeaHuyty/2ndYear-Term2-WebProject.git
+   cd 2ndYear-Term2-WebProject
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the server:
+   ```sh
+   npm run dev
+   ```
 
-Libraries installed:
-    framer-motion
+## Contributing
+
+Feel free to fork this repository and contribute improvements! If you find any issues, create a pull request or open an issue.
+
+## License
+
+This project is licensed under the **MIT License**.
+
+---
+
+Made with ❤️ using React & Framer Motion.
