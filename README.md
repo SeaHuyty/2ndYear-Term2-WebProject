@@ -19,7 +19,11 @@ This is a modern and responsive portfolio template built using **React.js** and 
    ```sh
    npm install
    ```
-3. Start the server:
+3. Install library:
+   ```sh
+   npm install framer-motion
+   ```
+4. Start the server:
    ```sh
    npm run dev
    ```
