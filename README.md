@@ -22,6 +22,7 @@ This is a modern and responsive portfolio template built using **React.js** and 
 3. Install library:
    ```sh
    npm install framer-motion
+   npm install @emailjs/browser --save
    ```
 4. Start the server:
    ```sh
