@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import emailjs from '@emailjs/browser';
+import resume from '/Mr.pdf';
 
 export default function Contact({ textEnter, textLeave }) {
 
@@ -30,7 +31,7 @@ export default function Contact({ textEnter, textLeave }) {
           <img src="gmail.png" alt="gmail" />
           <div className="detail">
             <h4>Gmail</h4>
-            <a href="mailto:presidentdonaldtrump@gmail.whitehouse">yournamedavid@gmail.com</a>
+            <a href="mailto:seahuyty4444@gmail.com">seahuyty@gmail.com</a>
           </div>
         </motion.div>
         <motion.div className="box"
@@ -40,7 +41,7 @@ export default function Contact({ textEnter, textLeave }) {
           <img src="telegram.png" alt="telegram" />
           <div className="detail">
             <h4>Telegram</h4>
-            <a>@JohnCena</a>
+            <a>@SeaHuyty</a>
           </div>
         </motion.div>
         <small style={{marginTop: '6%' }}>You can also connect with me on: </small>
@@ -51,7 +52,7 @@ export default function Contact({ textEnter, textLeave }) {
           <img src="github.png" alt="github" />
           <div className="detail">
             <h4>Github</h4>
-            <a>@JohnCena</a>
+            <a href='https://github.com/SeaHuyty' target="_blank">@SeaHuyty</a>
           </div>
         </motion.div>
         <motion.div className="box"
@@ -61,7 +62,7 @@ export default function Contact({ textEnter, textLeave }) {
           <img src="linkedIn.png" alt="github" />
           <div className="detail">
             <h4>LinkedIn</h4>
-            <a>@JohnCena</a>
+            <a href='https://www.linkedin.com/in/sea-huyty-bab014283/' target="_blank">Sea Huyty</a>
           </div>
         </motion.div>
         <small style={{marginTop: '6%' }}>Download my resume: </small>
@@ -72,7 +73,7 @@ export default function Contact({ textEnter, textLeave }) {
           <img src="download.png" alt="download" />
           <div className="detail">
             <h4>Download Resume</h4>
-            <a download='/Mr.pdf'>Click me</a>
+            <a href={resume} download='/Mr.pdf'>Click me</a>
           </div>
         </motion.div>
       </div>

@@ -22,6 +22,10 @@ export default function Project({ textEnter, textLeave }) {
                         <h2>PaPaN - Porsche-Exclusive Car Dealership Website</h2>
                         <p>A website for a specialized car dealership that exclusively sells Porsche vehicles. The design concept is inspired by Porsche’s philosophy—precision, innovation, and timeless elegance.
                             With a focus on luxury and functionality, the platform allows users to explore available models effortlessly while staying true to Porsche’s legacy of excellence.</p>
+                        <div className='buttons'>
+                            <a href='https://2nd-year-term1-web-project.vercel.app/' target='_blank'>Website</a>
+                            <a href='https://github.com/SeaHuyty/2ndYear-Term1-WebProject' target='_blank'>Source Code</a>
+                        </div>
                     </div>
                 </div>
                 <div className="project-box block">
@@ -36,4 +40,3 @@ export default function Project({ textEnter, textLeave }) {
         </motion.section>
     );
 }
-

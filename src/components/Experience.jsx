@@ -27,13 +27,13 @@ export default function Experience({ textEnter, textLeave }) {
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iste non natus quas impedit error similique sint aliquid perferendis distinctio?</p>
         </div>
         <div className="container second-container block">
-          <h2>Amazon</h2>
-          <small>May 2014 - May 2015</small>
+          <h2>Meta</h2>
+          <small>May 2015 - May 2016</small>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iste non natus quas impedit error similique sint aliquid perferendis distinctio?</p>
         </div>
         <div className="container third-container block">
-          <h2>Amazon</h2>
-          <small>May 2014 - May 2015</small>
+          <h2>Google</h2>
+          <small>May 2016 - May 2017</small>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur iste non natus quas impedit error similique sint aliquid perferendis distinctio?</p>
         </div>
       </div>
