@@ -17,7 +17,7 @@ export default function Home({ textEnter, textLeave }) {
             <br />
             <span className="span1">this is</span>
             <br />
-            <span className="span2">Your Name</span>
+            <span className="span2">Sea Huyty</span>
           </p>
         </div>
         <img src="car1.png" alt="car" />

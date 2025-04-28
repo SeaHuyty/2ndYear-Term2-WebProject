@@ -9,14 +9,14 @@ export default function Navbar() {
         whileTap={{ scale: 0.9 }}
         transition={{ type: 'spring', stiffness: 300 }}
       >
-        YOUR NAME
+        SEA HUYTY
       </motion.div>
       <div className="navigation">
         <a href="#home">HOME</a>
         <a href="#education">EDUCATION</a>
         <a href="#experience">EXPERIENCE</a>
+        <a href="#contact">CONTACT</a>
       </div>
-      <a href="#contact">CONTACT</a>
     </nav>
   );
 }
