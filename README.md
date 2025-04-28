@@ -2,6 +2,10 @@
 
 This is a modern and responsive portfolio template built using **React.js** and **Framer Motion** for smooth animations. It provides an elegant and interactive user experience, making it perfect for showcasing your projects, skills, and personal brand.
 
+## Live Demo
+
+Check out the live version of the project here: [Personal Portfolio](https://2nd-year-term2-web-project-nine.vercel.app/)
+
 ## Features
 
 - 🎨 **Framer Motion Animations** – Beautiful animations for enhanced user engagement
