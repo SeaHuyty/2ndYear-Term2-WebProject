@@ -39,8 +39,4 @@ Feel free to fork this repository and contribute improvements! If you find any i
 
 ## License
 
-This project is licensed under the **MIT License**.
-
----
-
-Made with ❤️ using React & Framer Motion.
+This project is licensed under the [MIT License](LICENSE).
